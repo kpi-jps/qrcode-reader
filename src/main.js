@@ -69,6 +69,7 @@
         startCam()
     }
 
+    !window.BarcodeDetector ? window['BarcodeDetector'] = barcodeDetectorPolyfill.BarcodeDetectorPolyfill : 
     window.BarcodeDetector ? init() : document.body.innerHTML = "Está aplicação não funciona neste navegador!"
 
 })()

@@ -12,7 +12,7 @@
     <main>
         <h1>Leitor de QRCode</h1>
         <div>
-            <video src=""></video>
+            <video src="" autoplay muted playsinline></video>
         </div>
         <div>
             <button id="read">Ler QRCode</button>
@@ -27,6 +27,8 @@
         </div>
     </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@undecaf/zbar-wasm@0.9.15/dist/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@undecaf/barcode-detector-polyfill@0.9.23/dist/index.js"></script>
 <script src="src/main.js"></script>
 
 </html>
